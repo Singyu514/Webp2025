@@ -1,0 +1,25 @@
+import logo from './logo.svg';
+import './App.css';
+
+function changeText(event) {
+  console.log(event.target);
+  event.target.innerText = event.target.innerText + " 被點了";
+}
+
+const styleArgument = {
+  color: 'lightblue',
+  cursor: 'pointer',
+  fontSize: '100px', color:'red'
+};
+
+
+
+function App() {
+  return (
+    <div className="App">
+        <h1 style={styleArgument} onClick={changeText}>hello CGU!!</h1>
+    </div>
+  );
+}
+
+export default App;
